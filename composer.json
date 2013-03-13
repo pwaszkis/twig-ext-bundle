@@ -1,7 +1,7 @@
 {
-    "name": "gajdaw/example-menu-bundle",
+    "name": "gajdaw/twig-ext-bundle",
     "type": "symfony-bundle",
-    "description": "Menu...",
+    "description": "Extension...",
     "keywords": [],
     "license": "MIT",
     "authors": [
@@ -11,13 +11,10 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "symfony/framework-bundle": ">=2.1,<2.3-dev",
-        "doctrine/doctrine-fixtures-bundle": ">=2.1,<2.3-dev",
-        "stof/doctrine-extensions-bundle": ">=1.1,<1.2-dev"
+        "php": ">=5.3.3"
     },
     "autoload": {
-        "psr-0": { "Gajdaw\\ExampleMenuBundle": "" }
+        "psr-0": { "Gajdaw\\TwigExtBundle": "" }
     },
-    "target-dir": "Gajdaw/ExampleMenuBundle"
+    "target-dir": "Gajdaw/TwigExtBundle"
 }
