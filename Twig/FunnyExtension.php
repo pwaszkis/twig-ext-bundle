@@ -9,6 +9,7 @@ class FunnyExtension extends \Twig_Extension
     {
         return array(
             'funny' => new \Twig_Filter_Method($this, 'funnyFilter'),
+            'pwaszkis' => new \Twig_Filter_Method($this, 'pwaszkisFilter'),
         );
     }
 
@@ -29,9 +30,15 @@ class FunnyExtension extends \Twig_Extension
         return str_repeat(':-)', $number);
     }
 
+    public function pwaszkisFilter($text)
+    {
+        return 'pwaszkis jest '.$text;
+    }
+
     public function getName()
     {
         return 'funny';
     }
+
 }
 
